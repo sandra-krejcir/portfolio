@@ -24,7 +24,7 @@ body {
 
 .showSecond {
   animation: popUp 0.5s ease-in;
-  animation-delay: 1s;
+  opacity: 1;
 }
 
 @keyframes popUp {
@@ -58,6 +58,44 @@ body {
   display: flex;
   flex-direction: row;
   color: white;
+  justify-content: center;
+  text-align: left;
+}
+
+#secOne {
+  padding-top: 10vw;
+}
+
+.introButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  column-gap: 5vw;
+  margin-top: 5vw;
+}
+
+#contact,
+#viewing {
+  height: 3.5vw;
+  width: 11vw;
+  border-radius: 2vw 2vw 2vw 2vw;
+  cursor: pointer;
+}
+
+#contact:hover,
+#viewing:hover {
+  animation: chooseButton 1s ease-in;
+}
+
+@keyframes chooseButton {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
 }
 
 #theWriter {
@@ -75,7 +113,7 @@ body {
   max-width: 100%;
   position: relative;
   margin: 0;
-  background-color: blueviolet;
+  background-image: url(images/background1.jpg);
 }
 
 /* Next & previous buttons */

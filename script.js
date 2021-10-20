@@ -29,6 +29,10 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
+
+  if ((i = 1)) {
+    slides[i].style.backgroundImage = "url(images/background2.jpg)";
+  }
 }
 
 let maxFirstIterations;
