@@ -34,7 +34,7 @@
               type="button"
               onclick="showSlides(-1)"
             >
-              Work with me
+              <span> Work with me </span>
             </button>
             <button
               id="viewing"
@@ -42,34 +42,116 @@
               type="button"
               onclick="showSlides(1)"
             >
-              View my portfolio
+              <span> View my portfolio </span>
             </button>
           </div>
         </div>
         <div class="slideshow-container hide">
+          <img
+            id="burgerMenu"
+            onclick="showMenu()"
+            src="https://img.icons8.com/ios/50/ffffff/circled-menu.png"
+          />
+
+          <ul id="theMenu" class="hide">
+            <li onclick="currentSlide(2)">MY PROJECTS</li>
+            <br />
+            <li onclick="currentSlide(3)">WHY UX? <br />WHY FRONTEND?</li>
+            <br />
+            <li onclick="currentSlide(4)">FUTURE PROJECT</li>
+            <br />
+            <li onclick="currentSlide(5)">CONTACT ME</li>
+          </ul>
+
           <div class="mySlides fade">
-            <div id="slideOne"></div>
-            <div class="text">Caption Text</div>
+            <div id="slideOne">
+              <div class="textBox">
+                <div class="text">
+                  <h1>The face behind Sandra Designs</h1>
+                  <p>
+                    Hi! As you already know, my name is Sandra Krejcir.
+                    <br />Being a young Croatian girl who moved to Denmark only
+                    a year ago, I faced a lot of challenges. However, that’s
+                    exactly what pushed me to take risks, face my fears, and
+                    work harder than ever to achieve everything I set my mind
+                    on.
+                  </p>
+                  <p>
+                    I am very devoted and ambitious, but not led by the means of
+                    success or fortune. Moreover I strive to learn and gain
+                    experience wherever/ whenever I can, in order to become the
+                    best version of myself.
+                    <br />
+                    <br />
+                    I would describe myself as a positive, open-minded and
+                    inventive person who is always ready for teamwork. With that
+                    being said, my eye for detail and perfectionism may
+                    sometimes come in the way, but I belive in sharing/listening
+                    to all perspectives and compromise (even if that means
+                    putting my idea aside).
+                  </p>
+                </div>
+                <img
+                  id="mePic"
+                  src="images/mePic.jpeg"
+                  alt="A picture of myself."
+                />
+              </div>
+            </div>
           </div>
 
           <div class="mySlides fade">
-            <div id="slideTwo"></div>
-            <div class="text">Caption Two</div>
+            <div id="slideTwo">
+              <div class="textBox">
+                <div class="text">
+                  <p>
+                    Currently, I'm still attending classes at KEA, in Multimedia
+                    Design, and am now finishing the last projects of my
+                    Frontend Elective before my internship.
+                    <br />
+                    Before starting my higher education at KEA, I've never
+                    truely worked with any form of web design or coding, so all
+                    of my displayed projects are school assignments through
+                    which I have learned and continuously tried to improve my
+                    newly acquired skills. Some of them of course better than
+                    others, but all of them equally valuable repesenting my (if
+                    I may say very quick) progress from a completely clueless
+                    user to a confident frontend developer.
+                  </p>
+                  <p>
+                    Even if most of the projects were "teacher generated", I do
+                    have experience with client work. Aside from helping me
+                    realize my full potential, working with different companies
+                    improved my communication with my group members, with
+                    possible future clients, as well as with self expression.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="mySlides fade">
-            <div id="slideThree"></div>
-            <div class="text">Caption Three</div>
+            <div id="slideThree">
+              <div class="textBox">
+                <div class="text">Caption Three</div>
+              </div>
+            </div>
           </div>
 
           <div class="mySlides fade">
-            <div id="slideFour"></div>
-            <div class="text">Caption Four</div>
+            <div id="slideFour">
+              <div class="textBox">
+                <div class="text">Caption Four</div>
+              </div>
+            </div>
           </div>
 
           <div class="mySlides fade">
-            <div id="slideFive"></div>
-            <div class="text">Caption Five</div>
+            <div id="slideFive">
+              <div class="textBox">
+                <div class="text">Caption Five</div>
+              </div>
+            </div>
           </div>
 
           <a class="prev" onclick="nextSlide(-1)">&#10094;</a>

@@ -6,6 +6,7 @@ function nextSlide(n) {
 
 function currentSlide(n) {
   showSlides((slideIndex = n));
+  document.querySelector("#theMenu").classList.add("hide");
 }
 
 function showSlides(n) {
@@ -31,6 +32,18 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 
   if ((i = 1)) {
+    slides[i].style.backgroundImage = "url(images/background2.jpg)";
+  }
+
+  if ((i = 2)) {
+    slides[i].style.backgroundImage = "url(images/background3.jpg)";
+  }
+
+  if ((i = 3)) {
+    slides[i].style.backgroundImage = "url(images/background4.jpg)";
+  }
+
+  if ((i = 4)) {
     slides[i].style.backgroundImage = "url(images/background2.jpg)";
   }
 }
@@ -98,4 +111,8 @@ function secondLoop() {
 function revealButtons() {
   document.querySelector("#contact").classList.add("showFirst");
   document.querySelector("#viewing").classList.add("showSecond");
+}
+
+function showMenu() {
+  document.querySelector("#theMenu").classList.toggle("hide");
 }
