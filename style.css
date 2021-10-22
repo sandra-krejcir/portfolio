@@ -42,12 +42,12 @@ body {
 #slideFour,
 #slideFive {
   width: 100%;
-  height: 46vw;
+  height: 48vw;
 }
 
 .frontground-container {
   max-width: 100%;
-  height: 46vw;
+  height: 48vw;
   position: relative;
   margin: 0;
   background-color: black;
