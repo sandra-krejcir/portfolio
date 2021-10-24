@@ -17,7 +17,7 @@
         <div class="frontground-container">
           <div id="secOne">
             <h1 id="typewriter" class="typewritten hide">
-              Hi, my name is Sandra :)
+              Bok! My name is Sandra.
             </h1>
             <div id="theWriter" class="hide">|</div>
           </div>
@@ -60,12 +60,25 @@
             <br />
             <li onclick="currentSlide(4)">FUTURE PROJECT</li>
             <br />
-            <li onclick="currentSlide(5)">CONTACT ME</li>
+            <li onclick="currentSlide(5)">
+              <div class="contact">
+                <a href="mailto:krejcir.sandra@gmail.com" target="_blank"><img
+                  src="https://img.icons8.com/ios-filled/50/ffffff/gmail-new.png"
+                /></a>
+                <a href="https://www.linkedin.com/in/sandra-krejcir-aa32a51b2/" target="_blank"><img
+                  src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png"
+                /></a>
+                <a href="https://www.instagram.com/sandra_krejcir/" target="_blank">
+                <img
+                  src="https://img.icons8.com/windows/96/ffffff/instagram-new.png"
+                /></a>
+              </div>
+            </li>
           </ul>
 
           <div class="mySlides fade">
             <div id="slideOne">
-              <div class="textBox">
+              <div class="textBox flex_row">
                 <div class="text">
                   <h1>The face behind Sandra Designs</h1>
                   <p>
@@ -81,59 +94,164 @@
                     success or fortune. Moreover I strive to learn and gain
                     experience wherever/ whenever I can, in order to become the
                     best version of myself.
-                    <br />
-                    <br />
-                    I would describe myself as a positive, open-minded and
-                    inventive person who is always ready for teamwork. With that
-                    being said, my eye for detail and perfectionism may
-                    sometimes come in the way, but I belive in sharing/listening
-                    to all perspectives and compromise (even if that means
-                    putting my idea aside).
                   </p>
                 </div>
+                <div id=slideOnesecTwo>
                 <img
                   id="mePic"
                   src="images/mePic.jpeg"
                   alt="A picture of myself."
-                />
+                ></img>
+                <p>
+                  <br />
+                  <br />
+                  Determined, open-minded and inventive.
+                  <br />And a bit of perfectionist with an eye for detail, but I
+                  acknowledge all perspectives and compromise (even if that
+                  means putting my idea aside).
+                </p>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="mySlides fade">
             <div id="slideTwo">
-              <div class="textBox">
+              <div class="textBox flex_row">
                 <div class="text">
-                  <p>
+                  <h1 id="beforeHeadline">Current projects</h1>
+                  <p id="beforeText">
                     Currently, I'm still attending classes at KEA, in Multimedia
                     Design, and am now finishing the last projects of my
                     Frontend Elective before my internship.
-                    <br />
-                    Before starting my higher education at KEA, I've never
-                    truely worked with any form of web design or coding, so all
-                    of my displayed projects are school assignments through
-                    which I have learned and continuously tried to improve my
-                    newly acquired skills. Some of them of course better than
-                    others, but all of them equally valuable repesenting my (if
-                    I may say very quick) progress from a completely clueless
-                    user to a confident frontend developer.
+                    <br /><br />
+                    Before attending KEA, I've never truely worked with any form
+                    of web design or coding, so all of my displayed projects are
+                    school assignments through which I have learned and
+                    continuously tried to improve my newly acquired skills.
+                    <br /><br />Some of them of course better than others, but
+                    all of them equally valuable repesenting my (if I may say
+                    very quick) progress from a completely clueless user to a
+                    confident frontend developer.
                   </p>
-                  <p>
-                    Even if most of the projects were "teacher generated", I do
-                    have experience with client work. Aside from helping me
-                    realize my full potential, working with different companies
-                    improved my communication with my group members, with
-                    possible future clients, as well as with self expression.
-                  </p>
+                  <div id="readMoreBtn">View projects</div>
+                  </div>
+                  <div id="slideTwosecTwo">
+                    <img
+                      id="keaPic"
+                      src="images/keaPic.png"
+                      alt="A picture of the KEA program."
+                    ></img>
+                    <img
+                      id="firstProPic"
+                      src="images/projectPic1.jpg"
+                      alt="A picture of projectwork."
+                    ></img>
+                    <img
+                      id="secondProPic"
+                      src="images/projectPic2.jpg"
+                      alt="A picture of projectwork."
+                    ></img>
+                    </div>
+                  <div id="projects_readMore" class="hide">
+                    <p>
+                      Displayed projects are mostly Javascript focused
+                      assignments with the design of the website being pushed a
+                      bit to the side.
+                      <br />
+                      Even if most of the projects were "teacher generated", I
+                      do have experience with client work.
+                      <br />
+                      Aside from helping me realize my full potential, working
+                      with different companies improved my communication skills
+                      and self expression.
+                    </p>
+                    <div class="projects">
+                      <div
+                        id="proOne"
+                        class="project"
+                        data-feature="leve"
+                      ></div>
+                      <div
+                        id="proTwo"
+                        class="project"
+                        data-feature="SILFEN"
+                      ></div>
+                      <div
+                        id="proThree"
+                        class="project"
+                        data-feature="mover"
+                      ></div>
+                      <div
+                        id="proFour"
+                        class="project"
+                        data-feature="hogwarts"
+                      ></div>
+                      <div
+                        id="proFive"
+                        class="project"
+                        data-feature="dragon"
+                      ></div>
+                      <div
+                        id="proSix"
+                        class="project"
+                        data-feature="palette"
+                      ></div>
+                    </div>
+                  </div>
+                  <div id="goBackBtn" class="hide">Return to projects</div>
+                  <div id="showProject" class="hide">
+                    <div class="project_container"></div>
+                    <p id="project_text"></p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
           <div class="mySlides fade">
             <div id="slideThree">
               <div class="textBox">
-                <div class="text">Caption Three</div>
+                <div class="text">
+                  <h1>Why UX? Why Frontend?</h1>
+                  <div class="flex_row">
+                  <p id="textWhyOne">
+                    Speaking of Frontend, it turned out to be a lot more
+                    difficult (and intimidating) than I expected it to be,
+                    however, that’s what kept my interest on edge with every
+                    passing day.
+                    <br /><br />Not having experience with any of the coding
+                    languages before attending KEA, keeps me on the edge of my
+                    seat. Just as I think I've mastered something, a new trend/
+                    feature catches my eye or a new idea pops up that motivates
+                    me to learn/ discover more.
+                  </p>
+                  <div class="flex_row">
+                  <img
+                      id="memeOnePic"
+                      src="images/meme1.png"
+                      alt="A meme from https://flatlogic.com/blog/top-40-javascript-meme-for-developers/."
+                    ></img>
+                    <video id="memeGif" alt="A gif from https://www.reddit.com/r/ProgrammerHumor/comments/pkumzj/css_tweaks/" autoplay loop>
+                      
+                      <source src="images/theGif.mp4" type="video/mp4"></video>
+                  </div>
+                </div>
+                  <div class="flex_row">
+                    <img
+                      id="memeTwoPic"
+                      src="images/meme2.png"
+                      alt="A meme from https://javascript.plainenglish.io/javascript-memes-c45c547c570f."
+                    ></img>
+                  <p id="textWhyTwo">
+                    The only downfall of coding is secludedness, and after
+                    working with the first client (Me-Mover), I realized I
+                    wanted to combine the communication, analytical, and coding
+                    skills - UX + Frontend.
+                    <br /><br />And here I am, lead by the counter question of:
+                    <span id="whyNot">And why not?</span>
+                  </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -141,7 +259,47 @@
           <div class="mySlides fade">
             <div id="slideFour">
               <div class="textBox">
-                <div class="text">Caption Four</div>
+                <div class="text">
+                  <h1>Future projects</h1>
+                  <div class="flex_row">
+                    <div><a href="https://dk.farnell.com/" target="_blank"><img
+                      id="farnellPic"
+                      src="images/farnell_logo.png"
+                      alt="A picture of the company logo."
+                    ></img></a>
+                    </div>
+                  <p id="farnellTextOne">
+                    Getting a taste of what it's like to work with a client and
+                    share your ideas and knowledge, I gladly accepted to help my
+                    friend, or better said, the company he works for - Farenell.</p>
+                  </div>
+                  <div class="flex_row">
+                  <p id="farnellTextTwo">
+                    All of it is still in early (talking) stages, with me
+                    looking through their current website and sending in
+                    comments.
+                    The next step includes a company meeting to explain
+                    my ideas and reasons behind them, and to get their input
+                    on how they invisioned the new website to look like.
+                    <br><br>
+                    And, hopefully, it'll turn out as a 'UX
+                    design consultant' role with me sharing my ideas and
+                    concerns,working closly with their frontend team.
+                  </p>
+                  <div class="column_it">
+                  <img
+                      id="farnellDKPic"
+                      src="images/farnell_dk.png"
+                      alt="A screenshot of Farnell website."
+                    ></img>
+                    <img
+                      id="farnellSPPic"
+                      src="images/bug.png"
+                      alt="An illustration."
+                    ></img>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -149,13 +307,20 @@
           <div class="mySlides fade">
             <div id="slideFive">
               <div class="textBox">
-                <div class="text">Caption Five</div>
+                <div class="text">
+                  <h1>Contact me (pretty please)</h1>
+                  <div class="flex_row">
+                  <p id="mail">Send your comments and ideas for improvement on my <a href="mailto:krejcir.sandra@gmail.com" target="_blank">gmail</a></p>
+                  <p id="linkIt">Or connect with me on <a href="https://www.linkedin.com/in/sandra-krejcir-aa32a51b2/" target="_blank">LinkedIn</a></p>
+                  <p id="insty">And if the 1st two don't work (but they will), try on my <a href="https://www.instagram.com/sandra_krejcir/" target="_blank">Instagram</a> account. </p>
+                </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <a class="prev" onclick="nextSlide(-1)">&#10094;</a>
-          <a class="next" onclick="nextSlide(1)">&#10095;</a>
+          <a class="prev" onclick="nextSlide(-1)"><span>&#10094;</span></a>
+          <a class="next" onclick="nextSlide(1)"><span>&#10095;</span></a>
 
           <div id="dots">
             <div style="text-align: center">
