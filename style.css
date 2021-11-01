@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap");
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Source Sans Pro", sans-serif;
   margin: 0;
+  height: 100%;
 }
 
 p {
@@ -58,12 +63,32 @@ figcaption {
 #slideFour,
 #slideFive {
   width: 100%;
-  height: 47vw;
+  height: 100%;
+}
+
+.backOne {
+  background-image: url(images/background1.jpg);
+  background-repeat: no-repeat;
+}
+
+.backTwo {
+  background-image: url(images/background2.jpg);
+  background-repeat: no-repeat;
+}
+
+.backThree {
+  background-image: url(images/background3.jpg);
+  background-repeat: no-repeat;
+}
+
+.backFour {
+  background-image: url(images/background4.jpg);
+  background-repeat: no-repeat;
 }
 
 .frontground-container {
   max-width: 100%;
-  height: 47vw;
+  height: 100%;
   position: relative;
   margin: 0;
   background-image: url("images/forground.jpg");
@@ -179,11 +204,9 @@ figcaption {
 
 .slideshow-container {
   max-width: 100%;
-  height: 47vw;
+  height: 100%;
   position: relative;
   margin: 0;
-  background-image: url(images/background1.jpg);
-  background-repeat: no-repeat;
 }
 
 #burgerMenu {
@@ -288,7 +311,7 @@ figcaption {
   position: absolute;
   margin-left: 10vw;
   width: 80%;
-  height: 36rem;
+  height: 35rem;
   top: 2vw;
   border-radius: 5vw 5vw 5vw 5vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -378,13 +401,9 @@ figcaption {
   top: 0;
 }
 
-#dots {
-  margin-top: -40px;
-  margin-left: 3.5rem;
-}
-
 .dot {
-  z-index: 100;
+  position: relative;
+  top: 38.5rem;
   cursor: pointer;
   height: 1vw;
   width: 1vw;

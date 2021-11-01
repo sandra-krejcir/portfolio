@@ -104,33 +104,53 @@ function showSlides(n) {
 
   if (n > slides.length) {
     slideIndex = 1;
-  }
-  if (n < 1) {
+  } else if (n < 1) {
     slideIndex = slides.length;
   }
+
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
+
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 
-  if ((i = 1)) {
-    slides[i].style.backgroundImage = "url(images/background2.jpg)";
-  }
-
-  if ((i = 2)) {
-    slides[i].style.backgroundImage = "url(images/background3.jpg)";
-  }
-
-  if ((i = 3)) {
-    slides[i].style.backgroundImage = "url(images/background4.jpg)";
-  }
-
-  if ((i = 4)) {
-    slides[i].style.backgroundImage = "url(images/background2.jpg)";
+  if (slideIndex === 1) {
+    document.querySelector(".slideshow-container").classList.add("backOne");
+    document.querySelector(".slideshow-container").classList.remove("backTwo");
+    document
+      .querySelector(".slideshow-container")
+      .classList.remove("backThree");
+    document.querySelector(".slideshow-container").classList.remove("backFour");
+  } else if (slideIndex === 2) {
+    document.querySelector(".slideshow-container").classList.add("backTwo");
+    document.querySelector(".slideshow-container").classList.remove("backOne");
+    document
+      .querySelector(".slideshow-container")
+      .classList.remove("backThree");
+    document.querySelector(".slideshow-container").classList.remove("backFour");
+  } else if (slideIndex === 3) {
+    document.querySelector(".slideshow-container").classList.add("backThree");
+    document.querySelector(".slideshow-container").classList.remove("backOne");
+    document.querySelector(".slideshow-container").classList.remove("backTwo");
+    document.querySelector(".slideshow-container").classList.remove("backFour");
+  } else if (slideIndex === 4) {
+    document.querySelector(".slideshow-container").classList.add("backFour");
+    document.querySelector(".slideshow-container").classList.remove("backOne");
+    document
+      .querySelector(".slideshow-container")
+      .classList.remove("backThree");
+    document.querySelector(".slideshow-container").classList.remove("backTwo");
+  } else {
+    document.querySelector(".slideshow-container").classList.add("backTwo");
+    document.querySelector(".slideshow-container").classList.remove("backOne");
+    document
+      .querySelector(".slideshow-container")
+      .classList.remove("backThree");
+    document.querySelector(".slideshow-container").classList.remove("backFour");
   }
 }
 
