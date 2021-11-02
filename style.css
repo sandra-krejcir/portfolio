@@ -630,8 +630,8 @@ figcaption {
 #farnellDKPic {
   width: 35vw;
   height: auto;
-  margin-top: 4vw;
-  margin-left: 2vw;
+  margin-top: -6.5rem;
+  margin-left: 5rem;
   border-radius: 0.5vw 0.5vw 0.5vw 0.5vw;
 }
 
@@ -639,8 +639,8 @@ figcaption {
   position: relative;
   width: 11vw;
   height: auto;
-  top: -28vw;
-  right: -30vw;
+  top: -5.5rem;
+  right: -30rem;
 }
 
 #mail,
