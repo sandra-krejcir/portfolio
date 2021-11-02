@@ -453,6 +453,7 @@ figcaption {
   background-image: url("images/leve.png");
   background-size: contain;
   border-radius: 1vw 1vw 1vw 1vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #proTwo {
@@ -460,6 +461,7 @@ figcaption {
   background-image: url("images/SILFEN.png");
   background-size: contain;
   border-radius: 1vw 1vw 1vw 1vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #proThree {
@@ -467,6 +469,7 @@ figcaption {
   background-image: url("images/mover.png");
   background-size: contain;
   border-radius: 1vw 1vw 1vw 1vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #proFour {
@@ -474,6 +477,7 @@ figcaption {
   background-image: url("images/hogwarts.png");
   background-size: contain;
   border-radius: 1vw 1vw 1vw 1vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #proFive {
@@ -481,6 +485,7 @@ figcaption {
   background-image: url("images/dragon.png");
   background-size: contain;
   border-radius: 1vw 1vw 1vw 1vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #proSix {
@@ -488,6 +493,7 @@ figcaption {
   background-image: url("images/palette.png");
   background-size: contain;
   border-radius: 1vw 1vw 1vw 1vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .project_container {
@@ -532,10 +538,10 @@ figcaption {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.mover {
+.leaf {
   width: 30vw;
   height: 15vw;
-  background-image: url("images/mover.png");
+  background-image: url("images/leafOfLife.png");
   background-size: contain;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

@@ -7,7 +7,7 @@ let moreWhy = false;
 const features = {
   leve: false,
   SILFEN: false,
-  mover: false,
+  leaf: false,
   hogwarts: false,
   dragon: false,
   palette: false,
@@ -16,8 +16,7 @@ const features = {
 const links = {
   leve: "http://sandradesigns.dk/leve-cph/index.html",
   SILFEN: "http://sandradesigns.dk/SILFEN/index.html",
-  mover:
-    "https://xd.adobe.com/view/d859950e-9a8c-4c1f-b906-02cd913c1be9-8d0a/?fullscreen",
+  leaf: "http://sandradesigns.dk/module-04/project_leaf-of-life/product/index.html",
   hogwarts: "https://sandra-krejcir.github.io/hogwarts/",
   dragon:
     "https://emilyhoolahan.com/kea/12_advanced_animation/own_configurator/",
@@ -185,7 +184,7 @@ function showProjects() {
       .forEach((element) => element.classList.add("hide"));
     document.querySelector("#projects_readMore").classList.remove("hide");
     document.querySelector("#readMoreBtn").style.color = "cornflowerblue";
-    document.querySelector("#readMoreBtn").textContent = "Back to summery";
+    document.querySelector("#readMoreBtn").textContent = "Back to summary";
   }
 
   isHidden = !isHidden;
@@ -258,7 +257,7 @@ function revealProject(event) {
     } else if (feature === "SILFEN") {
       document.querySelector("#project_text").innerHTML =
         "The collaboration with SILFEN was based on learning how to work with restdb, fetching/ posting JSON data to and from the server, as well as sharpening our UX skills. This project could actually be taken as a prototype before our final exam project. <br><br> Main focus of the project was to do a complete redesign of the current SILFEN website and providing the company with the newsletter feature as well as with a new SoMe strategy to attract (and keep) more customers. <br><br> During the project, I was again in 'the background' of the project developing the Javascript, and have quite struggled with making the filter and the cart function properly. Both unfortunately, ended up being hard coded, since the creating of both of the features were reserved for later classes in the semester (the final exam project).";
-    } else if (feature === "mover") {
+    } else if (feature === "leaf") {
       document.querySelector("#project_text").innerHTML =
         "Working with our first client (Me-Mover),the assignment was to do a thorough analysis of the company's UX- SWAT, market, competitor, corporate image and  identity, target audience, and of course the trends analysis. Using the results of the analyisis, we were to create a compaign consisting of (a longer YouTube video) a short campaign video and a landing page explaining the focus, values and goals of the new campaign.<br><br>Our idea for the campaign was to target an older part of their audience and attract them by presenting the Me-mover not only as a way of living a healthier life, but also as a way to socialize, make new memories,be a part of a new community, and escape the solumn feel created by the lockdown.<br><br>N.B. The link is to the xd prototype since the website has been removed by one of the group members. Here are also links to the videos: <a href=`https://www.youtube.com/watch?v=37s0MYfTutU` target=`_blank`> long video</a> and <a href=`https://www.youtube.com/watch?v=Naj-yVOeNic` target=`_blank`>short video</a>.";
     } else if (feature === "hogwarts") {
