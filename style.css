@@ -444,14 +444,14 @@ figcaption {
 }
 
 .project {
-  width: auto;
-  height: 13vw;
+  width: 16.8rem;
+  height: 9.4rem;
 }
 
 #proOne {
   grid-area: a;
   background-image: url("images/leve.png");
-  background-size: contain;
+  background-size: cover;
   border-radius: 1vw 1vw 1vw 1vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -459,15 +459,15 @@ figcaption {
 #proTwo {
   grid-area: b;
   background-image: url("images/SILFEN.png");
-  background-size: contain;
+  background-size: cover;
   border-radius: 1vw 1vw 1vw 1vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #proThree {
   grid-area: c;
-  background-image: url("images/mover.png");
-  background-size: contain;
+  background-image: url("images/leafOfLife.png");
+  background-size: cover;
   border-radius: 1vw 1vw 1vw 1vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -475,7 +475,7 @@ figcaption {
 #proFour {
   grid-area: d;
   background-image: url("images/hogwarts.png");
-  background-size: contain;
+  background-size: cover;
   border-radius: 1vw 1vw 1vw 1vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -483,7 +483,7 @@ figcaption {
 #proFive {
   grid-area: e;
   background-image: url("images/dragon.png");
-  background-size: contain;
+  background-size: cover;
   border-radius: 1vw 1vw 1vw 1vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -491,7 +491,7 @@ figcaption {
 #proSix {
   grid-area: f;
   background-image: url("images/palette.png");
-  background-size: contain;
+  background-size: cover;
   border-radius: 1vw 1vw 1vw 1vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -511,6 +511,14 @@ figcaption {
   margin-top: 3vw;
 }
 
+#projects_readMore {
+  margin-top: 2rem;
+}
+
+#projects_readMore p {
+  margin-bottom: 3rem;
+}
+
 #goBackBtn {
   cursor: pointer;
   color: steelblue;
@@ -526,7 +534,8 @@ figcaption {
   width: 30vw;
   height: 15vw;
   background-image: url("images/leve.png");
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -534,7 +543,8 @@ figcaption {
   width: 30vw;
   height: 15vw;
   background-image: url("images/SILFEN.png");
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -542,7 +552,8 @@ figcaption {
   width: 30vw;
   height: 15vw;
   background-image: url("images/leafOfLife.png");
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -550,7 +561,8 @@ figcaption {
   width: 30vw;
   height: 15vw;
   background-image: url("images/hogwarts.png");
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -558,7 +570,8 @@ figcaption {
   width: 30vw;
   height: 15vw;
   background-image: url("images/dragon.png");
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -566,7 +579,8 @@ figcaption {
   width: 30vw;
   height: 15vw;
   background-image: url("images/palette.png");
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -649,36 +663,62 @@ figcaption {
   right: -30rem;
 }
 
-#mail,
-#linkIt,
-#insty {
-  margin-top: 5rem;
-  width: 50vw;
+h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
 }
 
-#mail {
-  width: 30vw;
-  margin-top: 13rem;
-  margin-left: -4rem;
-  transform: rotate(43deg);
-  color: white;
-  filter: drop-shadow(0 2px 2px rgb(133, 5, 122));
+.lessTop {
+  margin-top: -0.55rem;
 }
 
-#linkIt {
-  margin-top: 19rem;
-  margin-left: 7rem;
-  color: white;
-  filter: drop-shadow(0 2px 2px rgb(133, 5, 122));
+#contacts {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-left: -7.5rem;
 }
 
-#insty {
-  width: 30vw;
-  margin-top: 8rem;
-  margin-left: -6rem;
-  transform: rotate(-45.5deg);
-  color: white;
-  filter: drop-shadow(0 2px 2px rgb(133, 5, 122));
+#contacts ul {
+  list-style: none;
+  margin-top: 2rem;
+  margin-left: 13rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#contacts li {
+  margin-top: 3rem;
+  margin-right: 8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#contacts a {
+  color: #1f6ac0;
+  text-decoration: none;
+}
+
+#contacts a:hover {
+  color: #270180;
+  text-decoration: wavy;
+  text-decoration-line: underline;
+}
+
+#contacts a img:hover {
+  transform: scale(1.2);
+}
+
+@keyframes chooseButton {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
 }
 
 /* Fading animation */
